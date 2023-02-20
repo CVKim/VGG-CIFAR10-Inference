@@ -213,7 +213,7 @@ history = vgg_model.fit(tr_ds, epochs=30,
                    )
 
 
-from tensorflow.keras.applications.vgg16 import preprocess_input as vgg_preprocess
+
 
 
 # scaling은 vgg 원래 구현 시, 사용한 채널별 값 - mean = [103.939, 116,779, 123.68] 적용
