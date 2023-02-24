@@ -213,10 +213,9 @@ history = vgg_model.fit(tr_ds, epochs=30,
                    )
 
 
-
-
-
 # scaling은 vgg 원래 구현 시, 사용한 채널별 값 - mean = [103.939, 116,779, 123.68] 적용
 # infer test
 test_ds = CIFAR_Dataset(test_images, test_oh_labels, batch_size=BATCH_SIZE, augmentor=None, shuffle=False, pre_func=vgg_preprocess)
 vgg_model.evaluate(test_ds)
+
+
